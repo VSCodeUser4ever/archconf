@@ -2,7 +2,7 @@
 
 # Define the pacman and AUR packages
 packages="fish neofetch latte-dock kvantum"
-yay_packages="klassy fastfetch-bin"
+yay_packages="klassy fastfetch-bin aur/pamac"
 
 # Update the system's packages and AUR packages
 sudo -S pacman -Syyu --noconfirm
