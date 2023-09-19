@@ -5,12 +5,12 @@ packages="fish neofetch latte-dock kvantum"
 yay_packages="klassy fastfetch-bin aur/pamac"
 
 # Update the system's packages and AUR packages
-sudo -S pacman -Syyu --noconfirm
+sudo pacman -Syyu --noconfirm
 yay -Syyu --noconfirm
 
 # Install the packages and AUR packages
-sudo -S pacman -S $packages --noconfirm
-yay -S $yay_packages --noconfirm
+sudo pacman -S $packages --noconfirm --needed
+yay -S $yay_packages --noconfirm --needed
 
 if test -d "./config/"; then
   # Ensure the ~/.config directory exists
