@@ -21,3 +21,7 @@ if test -d "./config/"; then
 else
     echo "Warning: The ./config/ directory does not exist. Configuration files were not copied."
 fi
+
+# Runs the post-install configs
+chsh -s $(which fish)
+sudo chsh -s $(which fish)
